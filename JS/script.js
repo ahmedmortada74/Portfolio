@@ -84,3 +84,72 @@ function asideSectionTogglerBtn() {
 
 
 
+// Contact Me
+function sendEmail(ev) {
+    ev.preventDefault();
+
+    
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("textarea").value.trim();
+
+    
+    if (!name || !email || !subject || !message) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Fields are required',
+            text: 'Please fill out all the fields before submitting.',
+        });
+        return; 
+    }
+
+    Email.send({
+        SecureToken: "3e08a2c7-dfa6-428a-a440-a12e1d8b4853",
+        To: 'ahmedabdelgaber74@gmail.com',
+        From: "ahmedabdelgaber74@gmail.com",
+        Subject: subject,
+        Body: "Name: " + name
+            + "<br>Email: " + email
+            + "<br>Subject: " + subject
+            + "<br>Message: " + message
+    }).then(
+        message => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'Your message has been sent successfully.',
+            });
+        }
+    ).catch(
+        error => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: 'There was an error sending your message.',
+            });
+            console.error("Error sending email: ", error);
+        }
+    );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
