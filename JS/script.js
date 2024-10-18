@@ -1,9 +1,14 @@
-var typed = new Typed(".typing", {
-    strings: ["Web Designer ", "Web Developer", "Web Designer", "Web Developer"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    loop: true
-})
+// document.addEventListener('DOMContentLoaded', function() {
+//     AOS.init();
+// });
+
+
+// var typed = new Typed(".typing", {
+//     strings: ["Web Designer ", "Web Developer", "Web Designer", "Web Developer"],
+//     typeSpeed: 100,
+//     BackSpeed: 60,
+//     loop: true
+// })
 
 
 ////Aside Start
@@ -86,9 +91,9 @@ function asideSectionTogglerBtn() {
 
 // Contact Me
 function sendEmail(ev) {
+    console.log("sendEmail function called");
     ev.preventDefault();
 
-    
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const subject = document.getElementById("subject").value.trim();
@@ -105,9 +110,9 @@ function sendEmail(ev) {
     }
 
     Email.send({
-        SecureToken: "3e08a2c7-dfa6-428a-a440-a12e1d8b4853",
-        To: 'ahmedabdelgaber74@gmail.com',
-        From: "ahmedabdelgaber74@gmail.com",
+        SecureToken: "0aedbd7b-4655-47c1-8a20-a6ad055a7af2",
+        To: 'casharel1999@gmail.com',
+        From: "casharel1999@gmail.com",
         Subject: subject,
         Body: "Name: " + name
             + "<br>Email: " + email
