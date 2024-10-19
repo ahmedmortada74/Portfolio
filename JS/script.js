@@ -1,7 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     AOS.init();
-// });
-
 
 // var typed = new Typed(".typing", {
 //     strings: ["Web Designer ", "Web Developer", "Web Designer", "Web Developer"],

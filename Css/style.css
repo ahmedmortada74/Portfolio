@@ -119,12 +119,12 @@ body.dark {
 
     40% {
         transform: translateY(-20px);
-        /* يتحرك للأعلى */
+        
     }
 
     60% {
         transform: translateY(-10px);
-        /* يتحرك للأعلى لكن أقل */
+        
     }
 }
 
@@ -147,18 +147,6 @@ body.dark {
         opacity: 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1279,9 +1267,19 @@ h3.my-profession {
         max-width: 100%;
     }
 
-    .home .home-img {
-        display: none;
-    }
+    .home .home-img img {
+        margin-top: 50px;
+        overflow: visible;
+
+        }
+        
+        .home-img::before{
+            display: none;
+        }
+        .home-img::after{
+            display: none;
+        }
+
 
 }
 
@@ -1309,12 +1307,4 @@ h3.my-profession {
 .service-item {
     animation: hover 3s ease-in-out infinite;
 }
-
-
-
-
-
-
-
-
 
