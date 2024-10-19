@@ -99,14 +99,14 @@ function sendEmail(ev) {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("textarea").value.trim();
 
-    
+
     if (!name || !email || !subject || !message) {
         Swal.fire({
             icon: 'error',
             title: 'Fields are required',
             text: 'Please fill out all the fields before submitting.',
         });
-        return; 
+        return;
     }
 
     Email.send({
@@ -137,23 +137,6 @@ function sendEmail(ev) {
         }
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

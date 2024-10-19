@@ -493,14 +493,21 @@ h3.hello span {
     color: var(--skin-color);
 }
 
-.leZoomInTop span { animation-name: LetterZoomInTop }
+.leZoomInTop span {
+    animation-name: LetterZoomInTop
+}
+
 @keyframes LetterZoomInTop {
     from {
         transform: scale(10) translateY(-50%);
         opacity: 0;
     }
 }
-.leZoomInRight span { animation-name: leZoomInRight }
+
+.leZoomInRight span {
+    animation-name: leZoomInRight
+}
+
 @keyframes leZoomInRight {
     from {
         transform: scale(10) translateX(150%);
@@ -508,30 +515,47 @@ h3.hello span {
     }
 }
 
-.leFadeInTop span { animation-name: leFadeInTop }
+.leFadeInTop span {
+    animation-name: leFadeInTop
+}
+
 @keyframes leFadeInTop {
     from {
         opacity: 0;
         transform: translateY(-100%);
     }
-    to { opacity: 1 }
-}
 
-.leKickOutFront span { animation-name: leKickOutBehind; transform-origin: top }
-@keyframes leKickOutBehind {
-    40% { transform: rotate(-45deg) }
-    100% {
-        transform: rotate(0deg);
-        animation-timing-function: cubic-bezier(0,.9,.7,1.45)
+    to {
+        opacity: 1
     }
 }
+
+.leKickOutFront span {
+    animation-name: leKickOutBehind;
+    transform-origin: top
+}
+
+@keyframes leKickOutBehind {
+    40% {
+        transform: rotate(-45deg)
+    }
+
+    100% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0, .9, .7, 1.45)
+    }
+}
+
 .leZoomInLeft {
     font-family: 700;
-      font-size: 34px;
+    font-size: 34px;
     color: var(--skin-color);
 }
 
-.leZoomInLeft span { animation-name: leZoomInLeft }
+.leZoomInLeft span {
+    animation-name: leZoomInLeft
+}
+
 @keyframes leZoomInLeft {
     from {
         transform: scale(10) translateX(-150%);
@@ -649,14 +673,25 @@ h3.my-profession {
 
 .about .about-content .about-text h3 span {
     color: var(--skin-color);
-    
+
 }
 
 
-.leSnake span { animation: leSnake 1.5s ease-in-out; animation-iteration-count: infinite }
+.leSnake span {
+    animation: leSnake 1.5s ease-in-out;
+    animation-iteration-count: infinite
+}
+
 @keyframes leSnake {
-    from, to { transform: translateY(0px) }
-    50% { transform: translateY(30px) }
+
+    from,
+    to {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(30px)
+    }
 }
 
 .about .about-content .about-text p {
@@ -771,9 +806,14 @@ h3.my-profession {
 
 }
 
-.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+.hu__hu__ {
+    animation: hu__hu__ infinite 2s ease-in-out
+}
+
 @keyframes hu__hu__ {
-    50% { transform: translateY(30px) }
+    50% {
+        transform: translateY(30px)
+    }
 }
 
 
@@ -1259,5 +1299,22 @@ h3.my-profession {
         max-width: 100%;
     }
 }
+
+
+@keyframes hover {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.service-item {
+    animation: hover 3s ease-in-out infinite;
+}
+
+
+
+
+
+
+
 
 
