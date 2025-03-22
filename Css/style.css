@@ -959,7 +959,7 @@ h3.my-profession {
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img h4 a {
+.portfolio .portfolio-item-inner h4 a {
     color: var(--text-black-900);
     font-weight: 700;
 
