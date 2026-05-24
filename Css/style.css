@@ -119,12 +119,20 @@ body.dark {
 
     40% {
         transform: translateY(-20px);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
     }
 
     60% {
         transform: translateY(-10px);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
     }
 }
 
@@ -620,6 +628,7 @@ h3.my-profession {
 }
 
 .home .home-info .icon-img {
+<<<<<<< HEAD
     margin-bottom: 30px;
     display: flex;
     gap: 15px;
@@ -640,6 +649,22 @@ h3.my-profession {
 .home .home-info .icon-img a:hover img {
     transform: translateY(-5px) scale(1.15);
     filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.2));
+=======
+
+    margin-bottom: 20px;
+}
+
+.home .home-info .icon-img img {
+    margin-left: 10px;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.home .home-info .icon-img img:hover {
+    transform: scale(1.1);
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 }
 
 
@@ -818,6 +843,7 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
+<<<<<<< HEAD
 /* About Items Entrance Animation */
 .about-anim-item {
     opacity: 0;
@@ -839,6 +865,8 @@ h3.my-profession {
     }
 }
 
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 .about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1059,6 +1087,7 @@ h3.my-profession {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 .portfolio-features {
     padding: 0 15px 20px;
     display: flex;
@@ -1102,6 +1131,11 @@ h3.my-profession {
     }
 }
 
+=======
+
+
+
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 /* Portfolio End */
 
 /* contact Start */
@@ -1110,8 +1144,11 @@ h3.my-profession {
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     opacity: 0;
     transform: translateX(-100vw);
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 }
 
 .contact-sub-title {
@@ -1119,6 +1156,7 @@ h3.my-profession {
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
+<<<<<<< HEAD
     opacity: 0;
     transform: translateX(-100vw);
 }
@@ -1137,6 +1175,8 @@ h3.my-profession {
         opacity: 1;
         transform: translateX(0);
     }
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 }
 
 .contact .contact-info-item {
@@ -1146,6 +1186,7 @@ h3.my-profession {
     margin-bottom: 60PX;
 }
 
+<<<<<<< HEAD
 /* Contact Items Entrance Animation */
 .contact-info-item, .contact-form {
     opacity: 0;
@@ -1167,6 +1208,8 @@ h3.my-profession {
     }
 }
 
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 .contact .contact-info-item .icon {
     display: inline-block;
 }
@@ -1373,9 +1416,14 @@ h3.my-profession {
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
+<<<<<<< HEAD
 
     }
 
+=======
+        
+    }
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
     .home .home-img {
         justify-content: center;
         align-items: center;
@@ -1384,6 +1432,7 @@ h3.my-profession {
     .home .home-img img {
         margin-top: 50px;
         overflow: visible;
+<<<<<<< HEAD
 
 
     }
@@ -1397,6 +1446,20 @@ h3.my-profession {
     }
 
     .home .home-img {
+=======
+        
+
+        }
+        
+        .home-img::before{
+            display: none;
+        }
+        .home-img::after{
+            display: none;
+        }
+
+          .home .home-img {
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
         justify-content: center;
         align-items: center;
     }
@@ -1418,6 +1481,7 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+<<<<<<< HEAD
 
     .home .home-img img {
         margin-top: 50px;
@@ -1433,11 +1497,27 @@ h3.my-profession {
     .home-img::after {
         display: none;
     }
+=======
+    .home .home-img img {
+        margin-top: 50px;
+        overflow: visible;
+        
+
+        }
+        
+        .home-img::before{
+            display: none;
+        }
+        .home-img::after{
+            display: none;
+        }
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 
 }
 
 
 @keyframes hover {
+<<<<<<< HEAD
 
     0%,
     100% {
@@ -1474,3 +1554,13 @@ h3.my-profession {
         transform: translateX(0);
     }
 }
+=======
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.service-item {
+    animation: hover 3s ease-in-out infinite;
+}
+
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db

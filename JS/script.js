@@ -11,7 +11,10 @@
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
     allSection = document.querySelectorAll(".section"),
     totalSection = allSection.length;
 for (let i = 0; i < totalNavList; i++) {
@@ -43,6 +46,7 @@ function removeBackSection() {
 function addBackSection(num) {
     allSection[num].classList.add("back-section");
 }
+<<<<<<< HEAD
 function animateProgressBars(section) {
     const progressBars = section.querySelectorAll(".progress-in");
     progressBars.forEach(bar => {
@@ -145,11 +149,14 @@ function animateContactItems(section) {
     });
 }
 
+=======
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 function showSection(element) {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("active")
     }
     const target = element.getAttribute("href").split("#")[1];
+<<<<<<< HEAD
     const targetSection = document.querySelector("#" + target);
     targetSection.classList.add("active");
 
@@ -178,6 +185,9 @@ function showSection(element) {
     if (target === "contact") {
         animateContactItems(targetSection);
     }
+=======
+    document.querySelector("#" + target).classList.add("active")
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 }
 function updateNav(element) {
     for (let i = 0; i < totalNavList; i++) {
@@ -264,6 +274,7 @@ function sendEmail(ev) {
     );
 }
 
+<<<<<<< HEAD
 // Animate on load if active section contains them
 window.addEventListener('load', () => {
     const activeSection = document.querySelector(".section.active");
@@ -283,5 +294,8 @@ window.addEventListener('load', () => {
         }, 100);
     }
 });
+=======
+
+>>>>>>> 3721eb7a2f4be857da5201b96f1a699c8940a0db
 
 

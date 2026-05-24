@@ -3,6 +3,7 @@ styleSwitcherToggler.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open")
 })
 
+
 // hide Style on scroll
 function hideStyleSwitcher() {
     if (document.querySelector(".style-switcher").classList.contains("open")) {
@@ -16,6 +17,14 @@ window.addEventListener("scroll", hideStyleSwitcher);
 document.querySelectorAll(".section").forEach(section => {
     section.addEventListener("scroll", hideStyleSwitcher);
 });
+
+// hide Style
+window.addEventListener("scroll", () => {
+    if (document.querySelector(".style-switcher").classList.contains("open")) {
+        document.querySelector(".style-switcher").classList.remove("open")
+    }
+    console.log(this)
+})
 
 // Theme Colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
